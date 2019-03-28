@@ -1,6 +1,6 @@
 workflow "New workflow" {
-  on = "push"
   resolves = ["GitHub Action for Docker"]
+  on = "schedule(*/1 * * * *)"
 }
 
 action "GitHub Action for Docker" {
