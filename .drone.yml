@@ -1,0 +1,5 @@
+pipeline:
+  backend:
+    image: node
+    commands:
+      - node -e 'console.log("hello world")'
