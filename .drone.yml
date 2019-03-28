@@ -1,3 +1,4 @@
+# you can config multiple pipelines and choice which  will run 
 kind: pipeline
 name: default
 
@@ -16,6 +17,7 @@ steps:
       - node -e 'console.log("hello world from dev")'
       - ./script.sh
 
+# other pipeline
 ---
 kind: pipeline
 name: job

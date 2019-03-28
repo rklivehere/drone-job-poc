@@ -18,3 +18,15 @@ workflows:
     jobs:
       - build
       - test
+  nightly:
+    triggers:
+      - schedule:
+          cron: "*/1 * * * *"
+          filters:
+            branches:
+              only:
+                - master
+                - dev
+    jobs:
+      - build
+      - test
