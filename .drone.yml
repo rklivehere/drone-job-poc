@@ -1,12 +1,34 @@
-pipeline:
-  install:
+kind: pipeline
+name: default
+
+steps:
+  - name: install
     image: node
     commands:
       - ./script.sh
       - npm install
       - ./script.sh
 
-  backend:
+  - name: backend
+    image: node
+    commands:
+      - ./script.sh
+      - node -e 'console.log("hello world from dev")'
+      - ./script.sh
+
+---
+kind: pipeline
+name: job
+
+steps:
+  - name: install
+    image: node
+    commands:
+      - ./script.sh
+      - npm install
+      - ./script.sh
+
+  - name: backend
     image: node
     commands:
       - ./script.sh
