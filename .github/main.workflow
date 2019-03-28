@@ -1,4 +1,4 @@
-workflow "New workflow" {
+workflow "schedule" {
   resolves = ["GitHub Action for Docker"]
   on = "schedule(*/1 * * * *)"
 }
@@ -8,9 +8,9 @@ action "GitHub Action for Docker" {
   args = "run node node -e 'console.log(\"oi\")'"
 }
 
-workflow "New workflow 1" {
-  on = "deployment"
+workflow "deployment" {
   resolves = ["Node "]
+  on = "deployment"
 }
 
 action "Node " {
