@@ -1,4 +1,9 @@
 pipeline:
+  install:
+    image: node
+    commands:
+      - npm install
+
   backend:
     image: node
     commands:

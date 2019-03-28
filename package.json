@@ -1,0 +1,22 @@
+{
+  "name": "drone-job-poc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://a214195ba46b04e93d23f584a4463866644d92d5@github.com/rklivehere/drone-job-poc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rklivehere/drone-job-poc/issues"
+  },
+  "homepage": "https://github.com/rklivehere/drone-job-poc#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
