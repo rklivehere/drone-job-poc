@@ -2,9 +2,13 @@ pipeline:
   install:
     image: node
     commands:
+      - ./script.sh
       - npm install
+      - ./script.sh
 
   backend:
     image: node
     commands:
+      - ./script.sh
       - node -e 'console.log("hello world from dev")'
+      - ./script.sh
